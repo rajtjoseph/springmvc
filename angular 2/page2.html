@@ -1,0 +1,25 @@
+<!doctype html>
+<html ng-app="module1">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+	<script src="msg.js"></script>
+  </head>
+  <body>
+    <div ng-controller="myController">
+      <label>Name:</label>
+      <input type="text" ng-model="yourName" placeholder="Enter a name here">
+      <hr>
+      <h1>Hello {{yourName}}!</h1>
+	  <h2>{{message}}</h2>
+	  
+	  <h1> Student Information </h1>
+	  <h2>{{student.firstName}}</h2>
+	  <h2>{{student.lastName}}</h2>
+	  <h2>{{student.Address}}</h2>
+	  <h2>{{student.City}}</h2>
+	  <h2>{{student.State}}</h2>
+	  <h2>{{student.Country}}</h2>
+	  
+    </div>
+  </body>
+</html>

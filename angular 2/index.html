@@ -1,0 +1,30 @@
+<!doctype html>
+<html ng-app="my-app">
+  <head>
+    <title>Angular with Spring</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+	<script Language="JavaScript" src="script.js"></script>
+  </head>
+  <body ng-controller="StudentController">
+	<h1> Angular JS </h1>
+
+	<div>
+		{{error}}
+	
+	</div>
+    <div>
+      {{message}}
+	  	{{50/2}}
+		{{githubuser.login}}
+    </div>
+	
+	<div>
+		<ul>
+		  <li ng-repeat="student in students">
+			{{student.fname}}, {{student.lname}}
+		  </li>
+		</ul>
+	
+	</div>
+  </body>
+</html>
